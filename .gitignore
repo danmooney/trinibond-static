@@ -36,6 +36,7 @@ jspm_packages/
 starting_files/
 test-results/
 public/*
+!public/img
 !public/.gitkeep
 !public/index.html
 !public/favicon.svg
