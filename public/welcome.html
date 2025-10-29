@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinibond - A Common Bond Puzzle Game</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/img/favicon-128.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="/img/favicon-152.png">
+    <link rel="icon" type="image/png" sizes="167x167" href="/img/favicon-167.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="/img/favicon-180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="196x196" href="/img/favicon-196.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin: 20px 0 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            text-align: justify;
+            padding: 20px;
+        }
+        .app-buttons {
+            display: flex;
+            justify-content: space-around;
+            width: fit-content;
+            margin: 35px auto 0;
+        }
+        .app-buttons a {
+            margin: 0 15px; /* This gives 30px of space between the buttons */
+        }
+
+        /* Mobile view: stack the buttons vertically */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+            .app-buttons {
+                flex-direction: column;
+            }
+            .app-buttons a {
+                margin: 15px auto; /* Center the buttons and give 30px of space between them */
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Welcome to Trinibond Puzzle Game!</h1>
+    </div>
+    <div class="content">
+        <p>
+            Trinibond is a unique puzzle game where players are challenged to find the common bond between three phrases.
+            Each puzzle consists of three phrases and the player's task is to find a word that can be combined with each of the three phrases to form a common word or phrase.
+        </p>
+        <p>
+            For example, if the three phrases are "fuji", "gala", and "mcintosh", the common bond would be "apples", as "fuji apple", "gala apple", and "mcintosh apple" are all types of apples.
+        </p>
+        <p>
+            The game is designed to test and improve your vocabulary and lateral thinking skills. It's a fun and challenging way to keep your brain sharp.
+            So, are you ready to take on the challenge and solve the puzzles? Let's get started!
+        </p>
+        <div id="download-app" class="app-buttons">
+            <a id="ios-button" href="https://apps.apple.com/app/id6511208444">
+                <img src="/img/ios-badge-example-preferred.png" alt="Download on the App Store" width="237">
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
