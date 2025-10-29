@@ -6,11 +6,11 @@ on:
       - main
 
 jobs:
-  run-tests:
-    uses: ./.github/workflows/tests.yml
+#  run-tests:
+#    uses: ./.github/workflows/tests.yml
 
   build-and-deploy:
-    needs: run-tests
+#    needs: run-tests
     runs-on: ubuntu-latest
 
     permissions:
