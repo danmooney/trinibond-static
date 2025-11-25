@@ -3,8 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trinibond - Challenge Your Mind with Word Puzzles</title>
-<!--    <base href="https://play.trinibond.com/">-->
+    <title>Trinibond - Free Word Puzzle Game for iOS | Brain Training App</title>
+    <meta name="description" content="Challenge your mind with Trinibond, the addictive free word puzzle game for iOS. Find the common word connecting three phrases. Train your brain with daily puzzles and improve your vocabulary.">
+    <meta name="keywords" content="word puzzle game, brain training, vocabulary game, iOS puzzle app, free puzzle game, word game, Trinibond">
+    <meta name="author" content="Trinibond">
+    <base href="https://play.trinibond.com/">
+    <link rel="canonical" href="https://play.trinibond.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://play.trinibond.com/">
+    <meta property="og:title" content="Trinibond - Free Word Puzzle Game for iOS">
+    <meta property="og:description" content="Challenge your mind with Trinibond. Find the common word connecting three phrases. Free daily puzzles to train your brain and improve vocabulary.">
+    <meta property="og:image" content="https://play.trinibond.com/img/1024.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://play.trinibond.com/">
+    <meta property="twitter:title" content="Trinibond - Free Word Puzzle Game for iOS">
+    <meta property="twitter:description" content="Challenge your mind with Trinibond. Find the common word connecting three phrases. Free daily puzzles to train your brain and improve vocabulary.">
+    <meta property="twitter:image" content="https://play.trinibond.com/img/1024.png">
+    
+    <!-- iOS App Meta -->
+    <meta name="apple-itunes-app" content="app-id=6511208444">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Trinibond">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
@@ -418,26 +442,75 @@
                 display: none;
             }
         }
+        /* Skip to Content Link */
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #2196FE;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 100;
+            border-radius: 0 0 4px 0;
+        }
+        
+        .skip-to-content:focus {
+            top: 0;
+        }
+        
+        /* Focus States */
+        a:focus, button:focus {
+            outline: 3px solid #2196FE;
+            outline-offset: 2px;
+        }
     </style>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Trinibond",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "1"
+      },
+      "description": "Challenge your mind with Trinibond, the addictive free word puzzle game for iOS. Find the common word connecting three phrases and train your brain with daily puzzles.",
+      "screenshot": "https://play.trinibond.com/img/gameplay.png",
+      "image": "https://play.trinibond.com/img/1024.png",
+      "downloadUrl": "https://apps.apple.com/app/id6511208444"
+    }
+    </script>
 </head>
 <body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" role="banner">
         <div class="container">
             <div class="hero-content">
-                <img src="/img/1024.png" alt="Trinibond App Icon" class="app-icon">
+                <img src="/img/1024.png" alt="Trinibond word puzzle game app icon" class="app-icon">
                 <h1>Challenge Your Mind with Trinibond</h1>
                 <p class="subtitle">The addictive word puzzle game that tests your vocabulary and lateral thinking</p>
-                <a href="https://apps.apple.com/app/id6511208444" class="cta-primary">Download Free on iOS</a>
+                <a href="https://apps.apple.com/app/id6511208444" class="cta-primary" aria-label="Download Trinibond free on iOS from the App Store">Download Free on iOS</a>
             </div>
-            <div class="scroll-indicator" aria-label="Scroll down" onclick="document.getElementById('how-it-works').scrollIntoView({behavior: 'smooth'}); return false;">
+            <div class="scroll-indicator" role="button" tabindex="0" aria-label="Scroll down to learn more" onclick="document.getElementById('how-it-works').scrollIntoView({behavior: 'smooth'}); return false;" onkeydown="if(event.key === 'Enter' || event.key === ' ') { document.getElementById('how-it-works').scrollIntoView({behavior: 'smooth'}); event.preventDefault(); }">
                 <div class="chevron"></div>
             </div>
         </div>
     </section>
 
     <!-- How It Works Section -->
-    <section id="how-it-works" class="section">
+    <section id="how-it-works" class="section" role="main">
+        <div id="main-content"></div>
         <div class="container">
             <h2 class="section-title">How It Works</h2>
             <p class="section-subtitle">Find the common word that connects three phrases. It's simple to learn, challenging to master!</p>
@@ -477,9 +550,9 @@
     </section>
 
     <!-- Features Section -->
-    <section class="section features">
+    <section class="section features" aria-labelledby="features-title">
         <div class="container">
-            <h2 class="section-title">Why You'll Love Trinibond</h2>
+            <h2 id="features-title" class="section-title">Why You'll Love Trinibond</h2>
             <p class="section-subtitle">More than just a game - it's brain training that's actually fun</p>
             
             <div class="features-grid">
@@ -511,13 +584,13 @@
     </section>
 
     <!-- Download Section -->
-    <section class="download-section">
+    <section class="download-section" role="contentinfo" aria-labelledby="download-title">
         <div class="container">
-            <h2 class="section-title">Ready to Challenge Yourself?</h2>
+            <h2 id="download-title" class="section-title">Ready to Challenge Yourself?</h2>
             <p class="section-subtitle">Download free and join thousands of puzzle enthusiasts training their brains daily</p>
             
-            <a href="https://apps.apple.com/app/id6511208444" class="app-store-button">
-                <img src="/img/ios-badge-example-preferred.png" alt="Download on the App Store">
+            <a href="https://apps.apple.com/app/id6511208444" class="app-store-button" aria-label="Download Trinibond free on the App Store for iOS">
+                <img src="/img/ios-badge-example-preferred.png" alt="Download Trinibond on the App Store">
             </a>
         </div>
     </section>
