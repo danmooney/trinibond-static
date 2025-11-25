@@ -68,7 +68,8 @@
             background-size: cover;
             background-position: center;
             color: white;
-            height: 100vh;
+            height: 100vh; /* Fallback for browsers without svh support */
+            height: 100svh; /* Small viewport height - doesn't change when browser UI shows/hides */
             min-height: 600px;
             display: flex;
             align-items: center;
