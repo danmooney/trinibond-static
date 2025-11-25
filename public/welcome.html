@@ -490,6 +490,17 @@
       "downloadUrl": "https://apps.apple.com/app/id6511208444"
     }
     </script>
+    
+    <script>
+        // Lock hero height to prevent Chrome mobile UI from causing layout shifts
+        document.addEventListener('DOMContentLoaded', function() {
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                const initialHeight = window.innerHeight;
+                hero.style.height = initialHeight + 'px';
+            }
+        });
+    </script>
 </head>
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
