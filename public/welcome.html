@@ -36,12 +36,19 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #000000 0%, #333333 100%);
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: white;
-            padding: 60px 0;
+            min-height: max(100vh, 600px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
             position: relative;
             overflow: hidden;
+            padding: 40px 0;
         }
         
         .hero::before {
@@ -51,7 +58,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 30% 50%, rgba(33, 150, 254, 0.1) 0%, transparent 50%);
+            background: radial-gradient(circle at 30% 50%, rgba(33, 150, 254, 0.15) 0%, transparent 50%);
         }
         
         .hero-content {
@@ -104,7 +111,7 @@
         
         /* How It Works Section */
         .section {
-            padding: 80px 0;
+            padding: 60px 0;
         }
         
         .section-title {
@@ -172,25 +179,13 @@
             line-height: 1.6;
         }
         
-        .gameplay-showcase {
-            text-align: center;
-            margin: 60px 0;
-        }
-        
-        .gameplay-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-        }
-        
         /* Example Section */
         .example-card {
             background: linear-gradient(135deg, #2196FE, #1976D2);
             color: white;
             padding: 40px;
             border-radius: 16px;
-            margin: 40px 0;
+            margin: 40px 0 0;
             text-align: center;
         }
         
@@ -265,7 +260,7 @@
             background: linear-gradient(135deg, #000000 0%, #333333 100%);
             color: white;
             text-align: center;
-            padding: 80px 0;
+            padding: 60px 0;
         }
         
         .download-section .section-title {
@@ -289,30 +284,11 @@
             width: auto;
         }
         
-        /* Navigation dots */
-        .nav-dots {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin: 40px 0;
-        }
-        
-        .dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #2196FE;
-            opacity: 0.3;
-        }
-        
-        .dot.active {
-            opacity: 1;
-        }
-        
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             .hero {
                 padding: 40px 0;
+                background-attachment: scroll;
             }
             
             .hero h1 {
@@ -329,7 +305,7 @@
             }
             
             .section {
-                padding: 60px 0;
+                padding: 40px 0;
             }
             
             .section-title {
@@ -357,6 +333,10 @@
             
             .container {
                 padding: 0 15px;
+            }
+            
+            .download-section {
+                padding: 40px 0;
             }
         }
         
@@ -389,11 +369,6 @@
                 <h1>Challenge Your Mind with Trinibond</h1>
                 <p class="subtitle">The addictive word puzzle game that tests your vocabulary and lateral thinking</p>
                 <a href="https://apps.apple.com/app/id6511208444" class="cta-primary">Start Playing Today</a>
-                <div class="nav-dots">
-                    <div class="dot active"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
             </div>
         </div>
     </section>
@@ -422,10 +397,6 @@
                     <h3>Submit Your Answer</h3>
                     <p>Type your answer and see if you've found the common bond!</p>
                 </div>
-            </div>
-            
-            <div class="gameplay-showcase">
-                <img src="/img/gameplay.png" alt="Trinibond Game Interface" class="gameplay-image">
             </div>
             
             <div class="example-card">
