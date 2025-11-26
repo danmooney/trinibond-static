@@ -29,6 +29,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Trinibond">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="/img/100.png">
+    <link rel="preload" as="image" href="/img/background.jpg">
+    
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64.png">
@@ -105,6 +110,7 @@
             margin: 0 auto 30px;
             display: block;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            background-color: rgba(255, 255, 255, 0.1);
         }
         
         .hero h1 {
@@ -511,7 +517,7 @@
     <section class="hero" role="banner">
         <div class="container">
             <div class="hero-content">
-                <img src="/img/1024.png" alt="Trinibond word puzzle game app icon" class="app-icon">
+                <img src="/img/100.png" alt="Trinibond word puzzle game app icon" class="app-icon" width="100" height="100" loading="eager" fetchpriority="high">
                 <h1>Challenge Your Mind with Trinibond</h1>
                 <p class="subtitle">The addictive word puzzle game that tests your vocabulary and lateral thinking</p>
                 <a href="https://apps.apple.com/app/id6511208444" class="cta-primary" aria-label="Download Trinibond free on iOS from the App Store">Download Free on iOS</a>
