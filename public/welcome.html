@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trinibond - Free Word Puzzle Game for iOS | Brain Training App</title>
-    <meta name="description" content="Challenge your mind with Trinibond, the addictive free word puzzle game for iOS. Find the common word connecting three phrases. Train your brain with daily puzzles and improve your vocabulary.">
-    <meta name="keywords" content="word puzzle game, brain training, vocabulary game, iOS puzzle app, free puzzle game, word game, Trinibond">
+    <title>Trinibond - Free Word Puzzle Game for iOS & Android | Brain Training App</title>
+    <meta name="description" content="Challenge your mind with Trinibond, the addictive free word puzzle game for iOS and Android. Find the common word connecting three phrases. Train your brain with daily puzzles and improve your vocabulary.">
+    <meta name="keywords" content="word puzzle game, brain training, vocabulary game, iOS puzzle app, Android puzzle app, free puzzle game, word game, Trinibond">
     <meta name="author" content="Trinibond">
     <base href="https://play.trinibond.com/">
     <link rel="canonical" href="https://www.trinibond.com/">
@@ -13,15 +13,15 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://play.trinibond.com/">
-    <meta property="og:title" content="Trinibond - Free Word Puzzle Game for iOS">
-    <meta property="og:description" content="Challenge your mind with Trinibond. Find the common word connecting three phrases. Free daily puzzles to train your brain and improve vocabulary.">
+    <meta property="og:title" content="Trinibond - Free Word Puzzle Game for iOS & Android">
+    <meta property="og:description" content="Challenge your mind with Trinibond. Find the common word connecting three phrases. Free daily puzzles to train your brain and improve vocabulary. Available on iOS and Android.">
     <meta property="og:image" content="https://play.trinibond.com/img/1024.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://play.trinibond.com/">
-    <meta property="twitter:title" content="Trinibond - Free Word Puzzle Game for iOS">
-    <meta property="twitter:description" content="Challenge your mind with Trinibond. Find the common word connecting three phrases. Free daily puzzles to train your brain and improve vocabulary.">
+    <meta property="twitter:title" content="Trinibond - Free Word Puzzle Game for iOS & Android">
+    <meta property="twitter:description" content="Challenge your mind with Trinibond. Find the common word connecting three phrases. Free daily puzzles to train your brain and improve vocabulary. Available on iOS and Android.">
     <meta property="twitter:image" content="https://play.trinibond.com/img/1024.png">
     
     <!-- iOS App Meta -->
@@ -127,24 +127,18 @@
             font-weight: 300;
         }
         
-        .cta-primary {
-            display: inline-block;
-            background: #2196FE;
-            color: white;
-            padding: 16px 32px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(33, 150, 254, 0.4);
+        .store-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
             margin-bottom: 30px;
         }
-        
-        .cta-primary:hover {
-            background: #1976D2;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(33, 150, 254, 0.5);
+
+        .store-buttons .app-store-button img {
+            height: 50px;
+            width: auto;
         }
         
         /* How It Works Section */
@@ -427,11 +421,10 @@
                 font-size: 1.7rem;
             }
             
-            .cta-primary {
-                padding: 14px 28px;
-                font-size: 1rem;
+            .store-buttons .app-store-button img {
+                height: 44px;
             }
-            
+
             .step-card {
                 padding: 20px;
             }
@@ -482,7 +475,7 @@
       "@type": "MobileApplication",
       "name": "Trinibond",
       "applicationCategory": "GameApplication",
-      "operatingSystem": "iOS",
+      "operatingSystem": "iOS, Android",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -493,7 +486,7 @@
         "ratingValue": "5.0",
         "ratingCount": "1"
       },
-      "description": "Challenge your mind with Trinibond, the addictive free word puzzle game for iOS. Find the common word connecting three phrases and train your brain with daily puzzles.",
+      "description": "Challenge your mind with Trinibond, the addictive free word puzzle game for iOS and Android. Find the common word connecting three phrases and train your brain with daily puzzles.",
       "screenshot": "https://play.trinibond.com/img/gameplay.png",
       "image": "https://play.trinibond.com/img/1024.png",
       "downloadUrl": "https://apps.apple.com/app/id6511208444"
@@ -520,7 +513,14 @@
                 <img src="/img/100.png" alt="Trinibond word puzzle game app icon" class="app-icon" width="100" height="100" loading="eager" fetchpriority="high">
                 <h1>Challenge Your Mind with Trinibond</h1>
                 <p class="subtitle">The addictive word puzzle game that tests your vocabulary and lateral thinking</p>
-                <a href="https://apps.apple.com/app/id6511208444" class="cta-primary" aria-label="Download Trinibond free on iOS from the App Store">Download Free on iOS</a>
+                <div class="store-buttons">
+                    <a href="https://apps.apple.com/app/id6511208444" class="app-store-button" aria-label="Download Trinibond free on the App Store for iOS">
+                        <img src="/img/ios-badge-example-preferred.png" alt="Download on the App Store" loading="eager">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.komoji.trinibond" class="app-store-button" aria-label="Get Trinibond on Google Play for Android">
+                        <img src="/img/GetItOnGooglePlay_Badge_Web_color_English.png" alt="Get it on Google Play" loading="eager">
+                    </a>
+                </div>
             </div>
             <div class="scroll-indicator" role="button" tabindex="0" aria-label="Scroll down to learn more" onclick="document.getElementById('how-it-works').scrollIntoView({behavior: 'smooth'}); return false;" onkeydown="if(event.key === 'Enter' || event.key === ' ') { document.getElementById('how-it-works').scrollIntoView({behavior: 'smooth'}); event.preventDefault(); }">
                 <div class="chevron"></div>
@@ -607,11 +607,16 @@
     <section class="download-section" role="contentinfo" aria-labelledby="download-title">
         <div class="container">
             <h2 id="download-title" class="section-title">Ready to Challenge Yourself?</h2>
-            <p class="section-subtitle">Download free and join thousands of puzzle enthusiasts training their brains daily</p>
+            <p class="section-subtitle">Download free on iOS or Android and join thousands of puzzle enthusiasts training their brains daily</p>
             
-            <a href="https://apps.apple.com/app/id6511208444" class="app-store-button" aria-label="Download Trinibond free on the App Store for iOS">
-                <img src="/img/ios-badge-example-preferred.png" alt="Download Trinibond on the App Store">
-            </a>
+            <div class="store-buttons">
+                <a href="https://apps.apple.com/app/id6511208444" class="app-store-button" aria-label="Download Trinibond free on the App Store for iOS">
+                    <img src="/img/ios-badge-example-preferred.png" alt="Download on the App Store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.komoji.trinibond" class="app-store-button" aria-label="Get Trinibond on Google Play for Android">
+                    <img src="/img/GetItOnGooglePlay_Badge_Web_color_English.png" alt="Get it on Google Play">
+                </a>
+            </div>
         </div>
     </section>
 </body>
