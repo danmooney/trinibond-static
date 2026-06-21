@@ -1,3 +1,3 @@
 # Trinibond Static
 
-## Hosts welcome page (trinibond.com) via public/welcome.html, and hosts Trinibond (i.e. Flutter game app)'s web target (public/index.html).
+## Note/TODO to self:  Move contents to Trinibond repo and use its existing deploy web script to deploy trinibond.com and play.trinibond.com; this repo doesn't need to exist and only complicates deployments.
